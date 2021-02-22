@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="NES.css is a NES-style CSS Framework.">
+  <meta name="keywords" content="html5,css,framework,sass,NES,8bit">
+  <meta name="author" content="© 2018 B.C.Rikko">
+  <meta name="theme-color" content="#212529">
+  <link rel="shortcut icon" type="image/png" href="https://nostalgic-css.github.io/NES.css/favicon.png">
+  <link rel="shortcut icon" sizes="196x196" href="https://nostalgic-css.github.io/NES.css/favicon.png">
+  <link rel="apple-touch-icon" href="https://nostalgic-css.github.io/NES.css/favicon.png">
+
+  <title>NES.css Atari Edition</title>
+
+  <link href="nes.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="vue.min.js"></script>
+  <script src="dialog-polyfill.js"></script>
+  <script src="highlight.js"></script>
+
+  <link href="dialog-polyfill.css" rel="stylesheet">
+  <link href="highlight-theme.css" rel="stylesheet">
+  <style type="text/css"></style>
+</head>
+
+<body>
+  <div id="nescss">
+    <header class="sticky">
+      <div class="container">
+        <div class="nav-brand">
+          <h1>NES.css, Atari edition</h1>
+          <p>NES-style CSS Framework.</p>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main class="main-content">
+        <section class="topic">
+          <img src="joystick.png" width="240" height="240" alt="Atari 2600 joystick" style="float: right;">
+          <h2 id="about"><a href="https://nostalgic-css.github.io/NES.css/#about">#</a>About</h2>
+          <p>NES.css is NES-style (8bit-like) CSS Framework.</p>
+          <p>This is Atari Edition of NES.css</p>
+        </section>
+        <section class="topic">
+          <h2 id="usage"><a href="https://nostalgic-css.github.io/NES.css/#usage">#</a>Usage</h2>
+          <p>NES.css only provides components. You will need to define your own layout.</p>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Texts</h3>
+              <div id="texts" class="item"><span class="nes-text is-primary">Primary</span>
+                <span class="nes-text is-success">Success</span>
+                <span class="nes-text is-warning">Warning</span>
+                <span class="nes-text is-error">Error</span>
+                <span class="nes-text is-disabled">Disabled</span>
+              </div>
+              <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-text is-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-text is-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-text is-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-text is-error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-text is-disabled"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Buttons</h3>
+              <div id="buttons" class="item"><a class="nes-btn"
+                  href="https://nostalgic-css.github.io/NES.css/#">Normal</a>
+
+                <button type="button" class="nes-btn is-primary">Primary</button>
+                <button type="button" class="nes-btn is-success">Success</button>
+                <button type="button" class="nes-btn is-warning">Warning</button>
+                <button type="button" class="nes-btn is-error">Error</button>
+                <button type="button" class="nes-btn is-disabled">Disabled</button>
+
+                <label class="nes-btn">
+                  <span>Select your file</span>
+                  <input type="file">
+                </label>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-disabled"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Select your file<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Radios</h3>
+              <div id="radios" class="item"><label>
+                  <input type="radio" class="nes-radio" name="answer" checked="">
+                  <span>Yes</span>
+                </label>
+
+                <label>
+                  <input type="radio" class="nes-radio" name="answer">
+                  <span>No</span>
+                </label>
+
+                <div style="background-color:#212529; padding: 1rem 0;">
+                  <label>
+                    <input type="radio" class="nes-radio is-dark" name="answer-dark" checked="">
+                    <span>Yes</span>
+                  </label>
+
+                  <label>
+                    <input type="radio" class="nes-radio is-dark" name="answer-dark">
+                    <span>No</span>
+                  </label>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answer"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answer"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>No<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#212529; padding: 1rem 0;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-radio is-dark"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answer-dark"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-radio is-dark"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answer-dark"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>No<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Checkboxes</h3>
+              <div id="checkboxes" class="item"><label>
+                  <input type="checkbox" class="nes-checkbox" checked="">
+                  <span>Enable</span>
+                </label>
+
+                <div style="background-color:#212529; padding: 1rem 0;">
+                  <label>
+                    <input type="checkbox" class="nes-checkbox is-dark" checked="">
+                    <span>Dark</span>
+                  </label>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-checkbox"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Enable<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#212529; padding: 1rem 0;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-checkbox is-dark"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Inputs</h3>
+              <div id="inputs" class="item">
+                <div class="nes-field">
+                  <label for="name_field">Your name</label>
+                  <input type="text" id="name_field" class="nes-input">
+                </div>
+
+                <div class="nes-field is-inline">
+                  <label for="inline_field">.input.is-success</label>
+                  <input type="text" id="inline_field" class="nes-input is-success" placeholder="NES.css">
+                </div>
+
+                <div class="nes-field is-inline">
+                  <label for="warning_field">.input.is-warning</label>
+                  <input type="text" id="warning_field" class="nes-input is-warning" placeholder="8bit.css">
+                </div>
+
+                <div class="nes-field is-inline">
+                  <label for="error_field">.input.is-error</label>
+                  <input type="text" id="error_field" class="nes-input is-error" placeholder="awesome.css">
+                </div>
+
+                <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                  <label for="dark_field" style="color:#fff;">.input.is-dark</label>
+                  <input type="text" id="dark_field" class="nes-input is-dark" placeholder="dark.css">
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-field"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name_field"</span>&gt;</span>Your name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-input"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-field is-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"inline_field"</span>&gt;</span>.input.is-success<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"inline_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-input is-success"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"NES.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-field is-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"warning_field"</span>&gt;</span>.input.is-warning<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"warning_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-input is-warning"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"8bit.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-field is-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"error_field"</span>&gt;</span>.input.is-error<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"error_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-input is-error"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"awesome.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#212529; padding: 1rem;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-field is-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dark_field"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:#fff;"</span>&gt;</span>.input.is-dark<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dark_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-input is-dark"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"dark.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Textarea</h3>
+              <div id="textarea" class="item"><label for="textarea_field">Textarea</label>
+                <textarea id="textarea_field" class="nes-textarea"></textarea>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"textarea_field"</span>&gt;</span>Textarea<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"textarea_field"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Selects</h3>
+              <div id="selects" class="item"><label for="default_select">Default select</label>
+                <div class="nes-select">
+                  <select required="" id="default_select">
+                    <option value="" disabled="" selected="" hidden="">Select...</option>
+                    <option value="0">To be</option>
+                    <option value="1">Not to be</option>
+                  </select>
+                </div>
+
+                <label for="success_select">nes-select.is-success</label>
+                <div class="nes-select is-success">
+                  <select required="" id="success_select">
+                    <option value="" disabled="" selected="" hidden="">Select...</option>
+                    <option value="0">To be</option>
+                    <option value="1">Not to be</option>
+                  </select>
+                </div>
+
+                <label for="warning_select">nes-select.is-warning</label>
+                <div class="nes-select is-warning">
+                  <select required="" id="warning_select">
+                    <option value="" disabled="" selected="" hidden="">Select...</option>
+                    <option value="0">To be</option>
+                    <option value="1">Not to be</option>
+                  </select>
+                </div>
+
+                <label for="error_select">nes-select.is-error</label>
+                <div class="nes-select is-error">
+                  <select required="" id="error_select">
+                    <option value="" disabled="" selected="" hidden="">Select...</option>
+                    <option value="0">To be</option>
+                    <option value="1">Not to be</option>
+                  </select>
+                </div>
+
+                <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px)">
+                  <label for="dark_select" style="color:#fff">nes-select.is-dark</label>
+                  <div class="nes-select is-dark">
+                    <select required="" id="dark_select">
+                      <option value="" disabled="" selected="" hidden="">Select...</option>
+                      <option value="0">To be</option>
+                      <option value="1">Not to be</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"default_select"</span>&gt;</span>Default select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-select"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">required</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"default_select"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span> <span class="hljs-attr">hidden</span>&gt;</span>Select...<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>To be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Not to be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"success_select"</span>&gt;</span>nes-select.is-success<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-select is-success"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">required</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"success_select"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span> <span class="hljs-attr">hidden</span>&gt;</span>Select...<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>To be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Not to be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"warning_select"</span>&gt;</span>nes-select.is-warning<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-select is-warning"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">required</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"warning_select"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span> <span class="hljs-attr">hidden</span>&gt;</span>Select...<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>To be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Not to be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"error_select"</span>&gt;</span>nes-select.is-error<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-select is-error"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">required</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"error_select"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span> <span class="hljs-attr">hidden</span>&gt;</span>Select...<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>To be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Not to be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px)"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dark_select"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:#fff"</span>&gt;</span>nes-select.is-dark<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-select is-dark"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">required</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dark_select"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span> <span class="hljs-attr">hidden</span>&gt;</span>Select...<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>To be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Not to be<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Containers</h3>
+              <div id="containers" class="item">
+                <div class="nes-container with-title is-centered">
+                  <p class="title">Container.is-centered</p>
+                  <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                </div>
+
+                <div class="nes-container is-dark with-title">
+                  <p class="title">Container.is-dark</p>
+                  <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                </div>
+
+                <div class="nes-container is-rounded">
+                  <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                </div>
+
+                <div class="nes-container is-rounded is-dark">
+                  <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container with-title is-centered"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Container.is-centered<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container is-dark with-title"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Container.is-dark<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container is-rounded"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container is-rounded is-dark"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Dialogs</h3>
+              <div id="dialogs" class="item">
+                <!-- Dialog -->
+                <section>
+                  <button type="button" class="nes-btn is-primary"
+                    onclick="document.getElementById(&#39;dialog-default&#39;).showModal();">
+                    Open dialog
+                  </button>
+                  <dialog class="nes-dialog" id="dialog-default">
+                    <form method="dialog">
+                      <p class="title">Dialog</p>
+                      <p>Alert: this is a dialog.</p>
+                      <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                        <button class="nes-btn is-primary">Confirm</button>
+                      </menu>
+                    </form>
+                  </dialog>
+                </section>
+
+                <!-- Dark dialog -->
+                <section>
+                  <button type="button" class="nes-btn is-primary"
+                    onclick="document.getElementById(&#39;dialog-dark&#39;).showModal();">
+                    Open dark dialog
+                  </button>
+                  <dialog class="nes-dialog is-dark" id="dialog-dark">
+                    <form method="dialog">
+                      <p class="title">Dark dialog</p>
+                      <p>Alert: this is a dialog.</p>
+                      <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                        <button class="nes-btn is-primary">Confirm</button>
+                      </menu>
+                    </form>
+                  </dialog>
+                </section>
+
+                <!-- Rounded dialog -->
+                <section>
+                  <button type="button" class="nes-btn is-primary"
+                    onclick="document.getElementById(&#39;dialog-rounded&#39;).showModal();">
+                    Open rounded dialog
+                  </button>
+                  <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+                    <form method="dialog">
+                      <p class="title">Rounded dialog</p>
+                      <p>Alert: this is a dialog.</p>
+                      <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                        <button class="nes-btn is-primary">Confirm</button>
+                      </menu>
+                    </form>
+                  </dialog>
+                </section>
+
+                <!-- Dark and Rounded dialog -->
+                <section>
+                  <button type="button" class="nes-btn is-primary"
+                    onclick="document.getElementById(&#39;dialog-dark-rounded&#39;).showModal();">
+                    Open dark and rounded dialog
+                  </button>
+                  <dialog class="nes-dialog is-dark is-rounded" id="dialog-dark-rounded">
+                    <form method="dialog">
+                      <p class="title">Dark and Rounded dialog</p>
+                      <p>Alert: this is a dialog.</p>
+                      <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                        <button class="nes-btn is-primary">Confirm</button>
+                      </menu>
+                    </form>
+                  </dialog>
+                </section>
+              </div>
+              <!---->
+              <p class="note nes-text is-error">NES.css does not include any JavaScript. If you want to use dialog
+                element other than Chrome, you need polyfill.</p> <button type="button"
+                class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style="display: none;"><button type="button"
+                class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-comment">&lt;!-- Dialog --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"document.getElementById('dialog-default').showModal();"</span>&gt;</span>
+    Open dialog
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dialog</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-dialog"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dialog-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"dialog"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Alert: this is a dialog.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dialog-menu"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span>&gt;</span>Confirm<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">menu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Dark dialog --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"document.getElementById('dialog-dark').showModal();"</span>&gt;</span>
+    Open dark dialog
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dialog</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-dialog is-dark"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dialog-dark"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"dialog"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Dark dialog<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Alert: this is a dialog.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dialog-menu"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span>&gt;</span>Confirm<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">menu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Rounded dialog --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"document.getElementById('dialog-rounded').showModal();"</span>&gt;</span>
+    Open rounded dialog
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dialog</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-dialog is-rounded"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dialog-rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"dialog"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Rounded dialog<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Alert: this is a dialog.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dialog-menu"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span>&gt;</span>Confirm<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">menu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Dark and Rounded dialog --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"document.getElementById('dialog-dark-rounded').showModal();"</span>&gt;</span>
+    Open dark and rounded dialog
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dialog</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-dialog is-dark is-rounded"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dialog-dark-rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"dialog"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Dark and Rounded dialog<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Alert: this is a dialog.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dialog-menu"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-btn is-primary"</span>&gt;</span>Confirm<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">menu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Lists</h3>
+              <div id="lists" class="item">
+                <div class="lists">
+                  <ul class="nes-list is-disc">
+                    <li>Good morning.</li>
+                    <li>Thou hast had a good night's sleep, I hope.</li>
+                    <li>Thou hast had a good afternoon</li>
+                    <li>Good night.</li>
+                  </ul>
+                </div>
+
+                <div class="lists">
+                  <ul class="nes-list is-circle">
+                    <li>Good morning.</li>
+                    <li>Thou hast had a good night's sleep, I hope.</li>
+                    <li>Thou hast had a good afternoon</li>
+                    <li>Good night.</li>
+                  </ul>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lists"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-list is-disc"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Good morning.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Thou hast had a good afternoon<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Good night.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lists"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-list is-circle"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Good morning.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Thou hast had a good afternoon<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Good night.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Tables</h3>
+              <div id="tables" class="item">
+                <div class="nes-table-responsive">
+                  <table class="nes-table is-bordered is-centered">
+                    <thead>
+                      <tr>
+                        <th>Table.is-bordered</th>
+                        <th>Table.is-centered</th>
+                        <th>Table.is-centered</th>
+                        <th>Table.is-centered</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Thou hast had a good morning</td>
+                        <td>Thou hast had a good afternoon</td>
+                        <td>Thou hast had a good evening</td>
+                        <td>Thou hast had a good night</td>
+                      </tr>
+                      <tr>
+                        <td>Thou hast had a good morning</td>
+                        <td>Thou hast had a good afternoon</td>
+                        <td>Thou hast had a good evening</td>
+                        <td>Thou hast had a good night</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="nes-table-responsive">
+                  <table class="nes-table is-bordered is-dark">
+                    <thead>
+                      <tr>
+                        <th>Table.is-dark</th>
+                        <th>Table.is-bordered</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Thou hast had a good morning</td>
+                        <td>Thou hast had a good afternon</td>
+                      </tr>
+                      <tr>
+                        <td>Thou hast had a good morning</td>
+                        <td>Thou hast had a good afternoon</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-table-responsive"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-table is-bordered is-centered"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-bordered<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-centered<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-centered<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-centered<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good morning<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good afternoon<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good evening<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good night<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good morning<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good afternoon<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good evening<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good night<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-table-responsive"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-table is-bordered is-dark"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-dark<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Table.is-bordered<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good morning<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good afternon<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good morning<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Thou hast had a good afternoon<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Progress</h3>
+              <div id="progress" class="item"><progress class="nes-progress" value="90" max="100"></progress>
+                <progress class="nes-progress is-primary" value="80" max="100"></progress>
+                <progress class="nes-progress is-success" value="50" max="100"></progress>
+                <progress class="nes-progress is-warning" value="30" max="100"></progress>
+                <progress class="nes-progress is-error" value="10" max="100"></progress>
+                <progress class="nes-progress is-pattern" value="50" max="100"></progress>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"90"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress is-primary"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"80"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress is-success"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress is-warning"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress is-error"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"10"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-progress is-pattern"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-small"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-medium"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-large"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-rounded"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-rounded is-small"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-rounded is-medium"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-avatar is-rounded is-large"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Gravatar image example"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.gravatar.com/avatar?s=15"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"image-rendering: pixelated;"</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Balloons</h3>
+              <div id="balloons" class="item">
+                <section class="nes-container">
+                  <section class="message-list">
+                    <section class="message -left">
+                      <i class="nes-bcrikko"></i>
+                      <!-- Balloon -->
+                      <div class="nes-balloon from-left">
+                        <p>Hello NES.css</p>
+                      </div>
+                    </section>
+
+                    <section class="message -right">
+                      <!-- Balloon -->
+                      <div class="nes-balloon from-right">
+                        <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                      </div>
+                      <i class="nes-bcrikko"></i>
+                    </section>
+                  </section>
+                </section>
+
+                <!-- Balloon 'is-dark'  -->
+                <section class="nes-container is-dark">
+                  <section class="message-list">
+                    <section class="message -left">
+                      <i class="nes-bcrikko"></i>
+                      <!-- Balloon -->
+                      <div class="nes-balloon from-left is-dark">
+                        <p>Hello NES.css</p>
+                      </div>
+                    </section>
+
+                    <section class="message -right">
+                      <!-- Balloon -->
+                      <div class="nes-balloon from-right is-dark">
+                        <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                      </div>
+                      <i class="nes-bcrikko"></i>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message -left"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-bcrikko"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Balloon --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-balloon from-left"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello NES.css<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message -right"</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Balloon --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-balloon from-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-bcrikko"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Balloon 'is-dark'  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-container is-dark"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message-list"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message -left"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-bcrikko"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Balloon --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-balloon from-left is-dark"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello NES.css<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message -right"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Balloon --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-balloon from-right is-dark"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Good morning. Thou hast had a good night's sleep, I hope.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-bcrikko"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Cursor</h3>
+              <div id="cursor" class="item">
+                <p class="nes-balloon from-left nes-pointer">
+                  This is not a clickable element, but it's an area of the pointer.
+                </p>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-balloon from-left nes-pointer"</span>&gt;</span>
+  This is not a clickable element, but it's an area of the pointer.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Badges</h3>
+              <div id="badges" class="item"><a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge">
+                  <span class="is-dark">NES.css</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge">
+                  <span class="is-primary">is</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge">
+                  <span class="is-success">a</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge">
+                  <span class="is-warning">great</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge">
+                  <span class="is-error">framework!</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge is-splited">
+                  <span class="is-dark">npm</span>
+                  <span class="is-primary">1.1.0</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge is-splited">
+                  <span class="is-dark">test</span>
+                  <span class="is-success">100%</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge is-icon">
+                  <span class="is-warning"><i class="nes-icon star is-small"></i></span>
+                  <span class="is-primary">Icons</span>
+                </a>
+
+                <a href="https://nostalgic-css.github.io/NES.css/#" class="nes-badge is-icon">
+                  <span class="is-dark">hi</span>
+                  <span class="is-warning">Text</span>
+                </a>
+              </div>
+              <!---->
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-dark"</span>&gt;</span>NES.css<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-primary"</span>&gt;</span>is<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-success"</span>&gt;</span>a<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-warning"</span>&gt;</span>great<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-error"</span>&gt;</span>framework!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge is-splited"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-dark"</span>&gt;</span>npm<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-primary"</span>&gt;</span>1.1.0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge is-splited"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-dark"</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-success"</span>&gt;</span>100%<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge is-icon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-warning"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon star is-small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-primary"</span>&gt;</span>Icons<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-badge is-icon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-dark"</span>&gt;</span>hi<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-warning"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Reaction-icons</h3>
+              <div id="reaction-icons" class="item">
+                <section class="icon-list">
+                  <!-- heart -->
+                  <i class="nes-icon is-large heart"></i>
+                  <i class="nes-icon is-large is-half heart"></i>
+                  <i class="nes-icon is-large is-transparent heart"></i>
+                  <i class="nes-icon is-large heart is-empty"></i>
+
+                  <!-- star -->
+                  <i class="nes-icon is-large star"></i>
+                  <i class="nes-icon is-large star is-half"></i>
+                  <i class="nes-icon is-large star is-transparent"></i>
+                  <i class="nes-icon is-large star is-empty"></i>
+
+                  <!-- like -->
+                  <i class="nes-icon is-large like"></i>
+                  <i class="nes-icon is-large like is-empty"></i>
+                </section>
+              </div>
+              <p class="description nes-text">If you wanto to change icon size, please use "is-small", "is-medium" and
+                "is-large".</p>
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-list"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- heart --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large heart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large is-half heart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large is-transparent heart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large heart is-empty"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- star --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large star is-half"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large star is-transparent"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large star is-empty"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- like --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large like"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon is-large like is-empty"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Sns-icons</h3>
+              <div id="sns-icons" class="item">
+                <section class="icon-list">
+                  <!-- twitter -->
+                  <i class="nes-icon twitter is-large"></i>
+
+                  <!-- facebook -->
+                  <i class="nes-icon facebook is-large"></i>
+
+                  <!-- instagram -->
+                  <i class="nes-icon instagram is-large"></i>
+
+                  <!-- github -->
+                  <i class="nes-icon github is-large"></i>
+
+                  <!-- google -->
+                  <i class="nes-icon google is-large"></i>
+
+                  <!-- gmail -->
+                  <i class="nes-icon gmail is-large"></i>
+
+                  <!-- medium -->
+                  <i class="nes-icon medium is-large"></i>
+
+                  <!-- linkedin -->
+                  <i class="nes-icon linkedin is-large"></i>
+
+                  <!-- twitch -->
+                  <i class="nes-icon twitch is-large"></i>
+
+                  <!-- youtube -->
+                  <i class="nes-icon youtube is-large"></i>
+
+                  <!-- reddit -->
+                  <i class="nes-icon reddit is-large"></i>
+
+                  <!-- whatsapp -->
+                  <i class="nes-icon whatsapp is-large"></i>
+                </section>
+              </div>
+              <p class="description nes-text">If you wanto to change icon size, please use "is-small", "is-medium" and
+                "is-large".</p>
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-list"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- twitter --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon twitter is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- facebook --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon facebook is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- instagram --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon instagram is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- github --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon github is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- google --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon google is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- gmail --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon gmail is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- medium --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon medium is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- linkedin --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon linkedin is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- twitch --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon twitch is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- youtube --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon youtube is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- reddit --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon reddit is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- whatsapp --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon whatsapp is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="nes-container with-title">
+              <h3 class="title">Other-icons</h3>
+              <div id="other-icons" class="item">
+                <section class="icon-list">
+                  <!-- close -->
+                  <i class="nes-icon close is-large"></i>
+
+                  <!-- trophy -->
+                  <i class="nes-icon trophy is-large"></i>
+
+                  <!-- coin -->
+                  <i class="nes-icon coin is-large"></i>
+                </section>
+              </div>
+              <p class="description nes-text">If you wanto to change icon size, please use "is-small", "is-medium" and
+                "is-large".</p>
+              <!----> <button type="button" class="nes-btn is-primary showcode">&lt;&gt;</button>
+            </section>
+            <section class="samplecode" style=""><button type="button" class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-list"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- close --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon close is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- trophy --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon trophy is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- coin --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-icon coin is-large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="samplecode" style="display: none;"><button type="button"
+                class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-list"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- controllers --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-jp-logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"snes-logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"snes-jp-logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- octocat --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-octocat animate"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- phone --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-smartphone"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-phone"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+          <section class="showcase">
+            <section class="samplecode" style="display: none;"><button type="button"
+                class="nes-btn copycode">copy</button>
+              <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-list"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Copyright Nintendo --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-mario"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-ash"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-pokeball"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-bulbasaur"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-charmander"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-squirtle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nes-kirby"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+            </section>
+          </section>
+        </section>
+      </main>
+      <footer>
+        <p><span>©2018</span> <a href="https://kuroeveryday.blogspot.com/" target="_blank" rel="noopener">Black Everyday
+            Company</a> <span>-</span> <a href="https://twitter.com/bc_rikko" target="_blank"
+            rel="noopener">@bc_rikko</a></p>
+      </footer>
+      <div class="nes-balloon from-right copied-balloon" style="display: none; top: 0px; left: 0px;">
+        <p>copied!!</p>
+      </div> <button type="button" class="nes-btn is-error scroll-btn active"><span>&lt;</span></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const h = document.querySelector('head');
+    ['dialog-polyfill.css', 'highlight-theme.css'].forEach(a => {
+      const l = document.createElement('link');
+      l.href = a;
+      l.rel = 'stylesheet';
+      h.appendChild(l);
+    })
+  </script>
+
+</body>
+
+</html>
